@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, input, button {
+    font-family: Raleway, sans-serif;
+}
+
+input, button {
+    font-size: 16px;
+}
+
+.head_bar {
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #355764;
+    color: white;
+}
+
+main {
+    width: 100%;
+    background-color: rgb(235, 240, 239);
+
+}
+main > .container-main {
+    margin: 0 auto;
+    padding: 25px;
+    max-width: 800px;
+    width: 85%;
+}
+.input_section {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #F0EABE ;
+    box-shadow: 0 2px 10px 5px #c9bf7777;
+}
+
+.input_section > h2 {
+    text-align: center;
+    color: rgb(20, 20, 20);
+}
+
+.input_section > form > .input {
+    margin: 14px auto;
+    width: 90%;
+}
+
+.input_section > form > button {
+    background-color: #355764;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 90%;
+    padding: 8px;
+    cursor: pointer;
+    margin: 20px auto;
+}
+
+.input_section > form > button > span {
+    font-weight: bold;
+}
+
+.input_section > form > .input > input {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    background: #F5F1FF;
+    border: 2px solid #3FA796;
+}
+
+
+.input_section > form > .input > label {
+    color: cornflowerblue;
+    font-weight: bold;
+    font-weight: lighter;
+    margin-bottom: 8px;
+    display: inline-block;
+    color: black;
+}
+
+.book_shelf {
+    margin: 16px 0 0 0;
+    background-color: #F0EABE ;
+    box-shadow: 0 2px 10px 5px #c9bf7777;;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.book_shelf > h2 {
+    color: rgb(20, 20, 20);
+}
+
+.book_shelf > .book_list {
+    padding: 10px;
+}
+
+.book_shelf > .book_list > .container_book {
+    padding: 8px 16px 16px 16px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.book_shelf > .book_list > .container_book > h3, p {
+    margin: 8px 0;
+}
+/* button */
+.check-button {
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus, .trash-button {
+    outline: none;
+}
